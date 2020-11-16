@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Weather</title>
+</head>
+<body>
+  <div class="container">
+    <h1>Get Weather Conditions From Anywhere!</h1>
+    <label for="city">Enter a latitude:</label>
+    <input id="city" type="text">
+    <!-- <label for="lon">Enter a longitude:</label>
+    <input id="lon" type="text"> -->
+    <p>1. Please select what weather pattern you'd like to observe</p>
+      <select class="form-control" id="weather" required>
+        <option value="">Choose your weather pattern</option>
+        <option value="clouds.all">clouds</option>
+        <option value="wind.speed">wind speed</option>
+        <option value="wind.direction">wind direction</option>
+      </select>
+    <button class="btn-success" id="weatherLocation">Get Current Temperature and Humidity</button>
+    <div class="showErrors"></div>
+    <div class="showHumidity"></div>
+    <div class="showTemp"></div>
+    <div class="showFeels"></div>
+    <div class="showWind"></div>
+    <div class="show3hSnow"></div>
+  </div>
+</body>
+</html>
